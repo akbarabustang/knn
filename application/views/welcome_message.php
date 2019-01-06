@@ -28,8 +28,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		color: #444;
 		background-color: transparent;
 		border-bottom: 1px solid #D0D0D0;
-		font-size: 19px;
+		font-size: 22px;
 		font-weight: normal;
+		text-align: center;
+		line-height:25px;
 		margin: 0 0 14px 0;
 		padding: 14px 15px 10px 15px;
 	}
@@ -46,16 +48,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	}
 
 	#body {
-		margin: 0 15px 0 15px;
+		margin: 0 50px 0 50px;
+
 	}
 
 	p.footer {
-		text-align: right;
-		font-size: 11px;
+		text-align: center;
+		font-size: 14px;
 		border-top: 1px solid #D0D0D0;
 		line-height: 32px;
 		padding: 0 10px 0 10px;
-		margin: 20px 0 0 0;
+		margin: 50px 0 0 0;
+		line-height:20px;
 	}
 
 	#container {
@@ -63,27 +67,71 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		border: 1px solid #D0D0D0;
 		box-shadow: 0 0 8px #D0D0D0;
 	}
+
+	#logo{
+
+		text-align: center;
+	}
+
+	.tombol{
+		float: right;
+		background:#2C97DF;
+  		color:white;
+  		border-top:0;
+  		border-left:0;
+  		border-right:0;
+  		border-bottom:5px solid #2A80B9;
+  		padding:10px 20px;
+ 		text-decoration:none;
+  		font-family:sans-serif;
+  		font-size:11pt;
+	}
+
+	#{
+		width: 
+		height:
+		position:;
+	}
+
 	</style>
 </head>
+
 <body>
 
 <div id="container">
-	<h1>Welcome Dona Putra !</h1>
+	<font face="Cooper Black" ><h1> <br>DETEKSI PEWARNA TEKSTIL TERHADAP PRODUK TAHU KUNING BERBASIS ANDROID <br> <br> </h1></font>
 
 	<div id="body">
-		<p>The page you are looking at is being generated dynamically by CodeIgniter.</p>
 
-		<p>If you would like to edit this page you'll find it located at:</p>
-		<code>application/views/welcome_message.php</code>
+		<div id="logo">
+			<br><br><img src="<?php echo base_url () ?>assets/images/logo.jpg" alt="logo"> 
+		</div><br><br>
 
-		<p>The corresponding controller for this page is found at:</p>
-		<code>application/controllers/Welcome.php</code>
+		<div id="body">
+			<b><font face="Font Face" >
+		Nama : Dona Putra Por		<a href="<?php echo base_url () ?>" class='tombol'>Deteksi</a><br>
+		NPM  : 065114373<br><br>
 
-		<p>If you are exploring CodeIgniter for the very first time, you should start by reading the <a href="user_guide/">User Guide</a>.</p>
+		Pembimbing 1 :				<a href="#" class='tombol'>Info</a><br>
+		Dr. Sri Setyaningsih, Dra., M.Si<br><br>
+
+		Pembimbing 2 :			<a href="#" class='tombol'>Keluar</a><br>	
+		Arie Qurania, M.Kom
+			</font></b>
+
+		</div>
+
 	</div>
 
-	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></p>
+	<font face="Font Face" ><p class="footer"> <br>PROGRAM STUDI ILMU KOMPUTER <br>
+FAKULTAS MATEMATIKA DAN ILMU PENGETAHUAN ALAM <br>
+UNIVERSITAS PAKUAN<br>
+BOGOR<br>
+2018<br><br></p></font>
+
 </div>
+
+
 
 </body>
 </html>
