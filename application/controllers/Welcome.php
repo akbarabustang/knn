@@ -20,6 +20,6 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('4_menghitung_nilai_euclidean');
+		$this->load->view('1_welcome_message');
 	}
 }

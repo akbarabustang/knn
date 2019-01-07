@@ -97,14 +97,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 ?>
 <table>
-<thead>
-<tr>
-    <th>#</th>
-    <th>Kode Rekening</th>
-    <th>Nama Program</th>
-    <th>Action</th>
-</tr>
-</thead>
+
 <tbody>
 
 <?php $i=1; foreach($datalatih as $datalatih) { ?> 
