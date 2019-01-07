@@ -95,7 +95,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			 <p align=right> Grafik Nilai Rata-Rata HSV <br> <br> <br> <br><br> <br></p>
 		</div>
 
-?>
+
 <table>
 
 <tbody>
