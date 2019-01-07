@@ -68,13 +68,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		box-shadow: 0 0 8px #D0D0D0;
 	}
 
-	#logo{
-
-		text-align: center;
-	}
-
 	.tombol{
-		float: right;
 		background:#2C97DF;
   		color:white;
   		border-top:0;
@@ -93,36 +87,51 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <body>
 
 <div id="container">
-	<font face="Cooper Black" ><h1> <br>DETEKSI PEWARNA TEKSTIL TERHADAP PRODUK TAHU KUNING BERBASIS ANDROID <br> <br> </h1></font>
+	<font face="Cooper Black" ><h1> <br>NMENGHITUNG NILAI EUCLIDEAN DISTANCE TERHADAP RATA-RATA HSV <br> <br> </h1></font>
 
 	<div id="body">
 
-		<div id="logo">
-			<br><br><img src="<?php echo base_url () ?>assets/images/logo.jpg" alt="logo"> 
-		</div><br><br>
+		<div>
+			 <p align=right> Grafik Nilai Rata-Rata HSV <br> <br> <br> <br><br> <br></p>
+		</div>
 
-		<div id="body">
-			<b><font face="Font Face" >
-		Nama : Dona Putra Por		<a href="#" class='tombol'>Deteksi</a><br>
-		NPM  : 065114373<br><br>
+<body>
+<h1>Data Latih</h1><hr>
+<table border="1" cellpadding="8">
+<tr>
+  <th>Gambar</th>
+  <th>Nama File</th>
+  <th>Ukuran File</th>
+  <th>Tipe File</th>
+</tr>
 
-		Pembimbing 1 :				<a href="#" class='tombol'>Info</a><br>
-		Dr. Sri Setyaningsih, Dra., M.Si<br><br>
+<?php
+// Load file koneksi.php
+include "koneksi.php";
+$query = "SELECT * FROM gambar"; // Tampilkan semua data gambar
+$sql = mysqli_query($connect, $query); // Eksekusi/Jalankan query dari variabel $query
+$row = mysqli_num_rows($sql); // Ambil jumlah data dari hasil eksekusi $sql
+if($row > 0){ // Jika jumlah data lebih dari 0 (Berarti jika data ada)
+  while($data = mysqli_fetch_array($sql)){ // Ambil semua data dari hasil eksekusi $sql
+    echo "<tr>";
+    echo "<td><img src='images/".$data['nama']."' width='100' height='100'></td>";
+    echo "<td>".$data['nama']."</td>";
+    echo "<td>".$data['ukuran']."</td>";
+    echo "<td>".$data['tipe']."</td>";
+    echo "</tr>";
+  }
+}else{ // Jika data tidak ada
+  echo "<tr><td colspan='4'>Data tidak ada</td></tr>";
+}
+?>
+</table>
+</body>
 
-		Pembimbing 2 :				<a href="#" class='tombol'>Keluar</a><br>	
-		Arie Qurania, M.Kom
-			</font></b>
-
+		<div>
+			<center><a href="#" class='tombol'>Konversi RGB ke HSV</a><br></center><br> <br>
 		</div>
 
 	</div>
-
-	<font face="Font Face" ><p class="footer"> 
-						<br>PROGRAM STUDI ILMU KOMPUTER <br>
-				FAKULTAS MATEMATIKA DAN ILMU PENGETAHUAN ALAM <br>
-								UNIVERSITAS PAKUAN<br>
-										BOGOR<br>
-										2018<br><br></p></font>
 
 </div>
 

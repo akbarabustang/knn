@@ -74,7 +74,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	}
 
 	.tombol{
-		float: right;
 		background:#2C97DF;
   		color:white;
   		border-top:0;
@@ -93,36 +92,23 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <body>
 
 <div id="container">
-	<font face="Cooper Black" ><h1> <br>DETEKSI PEWARNA TEKSTIL TERHADAP PRODUK TAHU KUNING BERBASIS ANDROID <br> <br> </h1></font>
+	<font face="Cooper Black" ><h1> <br> HASIL RESIZE DAN CROPPING GAMBAR <br> <br> </h1></font>
 
 	<div id="body">
 
-		<div id="logo">
-			<br><br><img src="<?php echo base_url () ?>assets/images/logo.jpg" alt="logo"> 
-		</div><br><br>
+		<div>
+			<h1> <br> Gambar Hasil Resize 50x50 Pixel <br> <br> </h1> <br> <br><br> <br>
+		</div>
 
-		<div id="body">
-			<b><font face="Font Face" >
-		Nama : Dona Putra Por		<a href="#" class='tombol'>Deteksi</a><br>
-		NPM  : 065114373<br><br>
+		<div>
+			<h1> <br> Gambar Hasil Cropping <br> <br> </h1><br> <br><br> <br>
+		</div><br>
 
-		Pembimbing 1 :				<a href="#" class='tombol'>Info</a><br>
-		Dr. Sri Setyaningsih, Dra., M.Si<br><br>
-
-		Pembimbing 2 :				<a href="#" class='tombol'>Keluar</a><br>	
-		Arie Qurania, M.Kom
-			</font></b>
-
+		<div>
+			<center><a href="#" class='tombol'>Konversi RGB ke HSV</a><br></center><br> <br>
 		</div>
 
 	</div>
-
-	<font face="Font Face" ><p class="footer"> 
-						<br>PROGRAM STUDI ILMU KOMPUTER <br>
-				FAKULTAS MATEMATIKA DAN ILMU PENGETAHUAN ALAM <br>
-								UNIVERSITAS PAKUAN<br>
-										BOGOR<br>
-										2018<br><br></p></font>
 
 </div>
 

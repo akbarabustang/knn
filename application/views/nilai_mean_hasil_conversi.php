@@ -68,13 +68,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		box-shadow: 0 0 8px #D0D0D0;
 	}
 
-	#logo{
-
-		text-align: center;
-	}
-
 	.tombol{
-		float: right;
 		background:#2C97DF;
   		color:white;
   		border-top:0;
@@ -93,36 +87,23 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <body>
 
 <div id="container">
-	<font face="Cooper Black" ><h1> <br>DETEKSI PEWARNA TEKSTIL TERHADAP PRODUK TAHU KUNING BERBASIS ANDROID <br> <br> </h1></font>
+	<font face="Cooper Black" ><h1> <br>NILAI RATA-RATA CITRA HASIL KONVERSI RGB KE HSV <br> <br> </h1></font><br> <br> <br> <br> <br> <br> <br> <br> 
 
 	<div id="body">
 
-		<div id="logo">
-			<br><br><img src="<?php echo base_url () ?>assets/images/logo.jpg" alt="logo"> 
-		</div><br><br>
+		<div>
+			<h1> Hue  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Saturatiom  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Value </h1> 
+		</div>
 
-		<div id="body">
-			<b><font face="Font Face" >
-		Nama : Dona Putra Por		<a href="#" class='tombol'>Deteksi</a><br>
-		NPM  : 065114373<br><br>
+		<div>
+			 <p align=right><br> Grafik Nilai Rata-Rata HSV <br> <br> <br> <br><br> <br></p>
+		</div>
 
-		Pembimbing 1 :				<a href="#" class='tombol'>Info</a><br>
-		Dr. Sri Setyaningsih, Dra., M.Si<br><br>
-
-		Pembimbing 2 :				<a href="#" class='tombol'>Keluar</a><br>	
-		Arie Qurania, M.Kom
-			</font></b>
-
+		<div>
+			<center><a href="#" class='tombol'>Konversi RGB ke HSV</a><br></center><br> <br>
 		</div>
 
 	</div>
-
-	<font face="Font Face" ><p class="footer"> 
-						<br>PROGRAM STUDI ILMU KOMPUTER <br>
-				FAKULTAS MATEMATIKA DAN ILMU PENGETAHUAN ALAM <br>
-								UNIVERSITAS PAKUAN<br>
-										BOGOR<br>
-										2018<br><br></p></font>
 
 </div>
 
