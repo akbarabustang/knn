@@ -95,37 +95,38 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			 <p align=right> Grafik Nilai Rata-Rata HSV <br> <br> <br> <br><br> <br></p>
 		</div>
 
-<body>
-<h1>Data Latih</h1><hr>
-<table border="1" cellpadding="8">
+?>
+<table>
+<thead>
 <tr>
-  <th>Gambar</th>
-  <th>Nama File</th>
-  <th>Ukuran File</th>
-  <th>Tipe File</th>
+    <th>#</th>
+    <th>Kode Rekening</th>
+    <th>Nama Program</th>
+    <th>Action</th>
+</tr>
+</thead>
+<tbody>
+
+<?php $i=1; foreach($datalatih as $datalatih) { ?> 
+
+	<tr>
+    <td><?php echo $i ?></td>
+    <td><?php echo $datalatih->Nama ?></td>
+    <td><?php echo $datalatih->Mean_Hue ?></td>
+    <td><?php echo $datalatih->Mean_Saturation ?></td>
+    <td><?php echo $datalatih->Mean_Value ?></td>
+    <td><?php echo $datalatih->Kategori ?></td>
+    <td>
+     
+
+    </td>
 </tr>
 
-<?php
-// Load file koneksi.php
-include "koneksi.php";
-$query = "SELECT * FROM gambar"; // Tampilkan semua data gambar
-$sql = mysqli_query($connect, $query); // Eksekusi/Jalankan query dari variabel $query
-$row = mysqli_num_rows($sql); // Ambil jumlah data dari hasil eksekusi $sql
-if($row > 0){ // Jika jumlah data lebih dari 0 (Berarti jika data ada)
-  while($data = mysqli_fetch_array($sql)){ // Ambil semua data dari hasil eksekusi $sql
-    echo "<tr>";
-    echo "<td><img src='images/".$data['nama']."' width='100' height='100'></td>";
-    echo "<td>".$data['nama']."</td>";
-    echo "<td>".$data['ukuran']."</td>";
-    echo "<td>".$data['tipe']."</td>";
-    echo "</tr>";
-  }
-}else{ // Jika data tidak ada
-  echo "<tr><td colspan='4'>Data tidak ada</td></tr>";
-}
-?>
+<?php $i++; } ?>
+
+</tbody>
 </table>
-</body>
+
 
 		<div>
 			<center><a href="#" class='tombol'>Konversi RGB ke HSV</a><br></center><br> <br>
@@ -134,8 +135,6 @@ if($row > 0){ // Jika jumlah data lebih dari 0 (Berarti jika data ada)
 	</div>
 
 </div>
-
-<img src="<?php echo base_url ()?>public/uploads/img/testing.jpg" alt="">
 
 </body>
 </html>
