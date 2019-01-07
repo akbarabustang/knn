@@ -126,5 +126,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 </div>
 
+<img src="<?php echo base_url ()?>public/uploads/img/testing.jpg" alt="">
+
 </body>
 </html>
