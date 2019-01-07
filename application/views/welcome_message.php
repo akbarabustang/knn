@@ -87,12 +87,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   		font-size:11pt;
 	}
 
-	#{
-		width: 
-		height:
-		position:;
-	}
-
 	</style>
 </head>
 
@@ -123,15 +117,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 	</div>
 
-	<font face="Font Face" ><p class="footer"> <br>PROGRAM STUDI ILMU KOMPUTER <br>
-FAKULTAS MATEMATIKA DAN ILMU PENGETAHUAN ALAM <br>
-UNIVERSITAS PAKUAN<br>
-BOGOR<br>
-2018<br><br></p></font>
+	<font face="Font Face" ><p class="footer"> 
+						<br>PROGRAM STUDI ILMU KOMPUTER <br>
+				FAKULTAS MATEMATIKA DAN ILMU PENGETAHUAN ALAM <br>
+								UNIVERSITAS PAKUAN<br>
+										BOGOR<br>
+										2018<br><br></p></font>
 
 </div>
-
-
 
 </body>
 </html>
