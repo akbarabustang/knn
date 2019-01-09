@@ -14,7 +14,7 @@ class Program_model extends CI_Model {
 		$this->db->select('*');
 		$this->db->from('data_latih');
 		$this->db->group_by('Nama','Mean_Hue','Mean_Saturation', 'Mean_Value', 'Kategori', 'tahu_kuning');
-                $this->db->order_by('Nama');
+                $this->db->order_by('id');
               
 		$query = $this->db->get();
 		return $query->result();

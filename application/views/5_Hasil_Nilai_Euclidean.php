@@ -95,11 +95,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			 <p align=right> Grafik Nilai Rata-Rata HSV <br> <br> <br> <br><br> <br></p>
 		</div>
 
-		<div>
-			<center><a href="#" class='tombol'>Hitung Euclidean Distance</a><br></center><br> <br>
-		</div>
 
 <table>
+
 <tbody>
 
 <?php $i=1; foreach($datalatih as $datalatih) { ?> 
@@ -127,6 +125,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		</div>
 
 <br> <br><br> <br><br> <br>
+
+		<div>
+			<center><a href="#" class='tombol'>Konversi RGB ke HSV</a><br></center><br> <br>
+		</div>
 
 	</div>
 
