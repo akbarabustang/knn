@@ -22,4 +22,12 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('1_welcome_message');
 	}
+
+
+	public function imageconverstion()
+	{
+		$data = $this->db->query(" SELECT * FROM data_deteksi ORDER BY id DESC LIMIT 0,1 ")->row();
+
+		echo json_encode(array('data'=>$data));
+	}
 }
